@@ -17,7 +17,6 @@
 		64615DD02B03928800EAAB0E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64615DCF2B03928800EAAB0E /* SnapKit */; };
 		64615DD32B0397DA00EAAB0E /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DD22B0397DA00EAAB0E /* CardModel.swift */; };
 		64615DD52B0633D800EAAB0E /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DD42B0633D800EAAB0E /* ShoppingView.swift */; };
-		64615DD72B0636FA00EAAB0E /* SpendingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DD62B0636FA00EAAB0E /* SpendingsView.swift */; };
 		64615DD92B06445D00EAAB0E /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DD82B06445D00EAAB0E /* TransportView.swift */; };
 		64615DDB2B064A5600EAAB0E /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DDA2B064A5600EAAB0E /* FoodView.swift */; };
 		64615DE02B076CDA00EAAB0E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 64615DDF2B076CDA00EAAB0E /* FirebaseAuth */; };
@@ -33,6 +32,8 @@
 		64615DF62B076FF800EAAB0E /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DF52B076FF800EAAB0E /* LoginResult.swift */; };
 		64615DF82B0774E600EAAB0E /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DF72B0774E600EAAB0E /* FirestoreManager.swift */; };
 		64615DFA2B077ED500EAAB0E /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64615DF92B077ED500EAAB0E /* TransitionManager.swift */; };
+		64ADF36D2B0A12EC00E49EFE /* SpendingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ADF36C2B0A12EC00E49EFE /* SpendingsModel.swift */; };
+		64ADF36F2B0A162000E49EFE /* TotalSpentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ADF36E2B0A162000E49EFE /* TotalSpentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		64615DCC2B0391D100EAAB0E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		64615DD22B0397DA00EAAB0E /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		64615DD42B0633D800EAAB0E /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
-		64615DD62B0636FA00EAAB0E /* SpendingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsView.swift; sourceTree = "<group>"; };
 		64615DD82B06445D00EAAB0E /* TransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportView.swift; sourceTree = "<group>"; };
 		64615DDA2B064A5600EAAB0E /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		64615DEE2B076DA200EAAB0E /* GoogleSingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSingInViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		64615DF52B076FF800EAAB0E /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		64615DF72B0774E600EAAB0E /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		64615DF92B077ED500EAAB0E /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		64ADF36C2B0A12EC00E49EFE /* SpendingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsModel.swift; sourceTree = "<group>"; };
+		64ADF36E2B0A162000E49EFE /* TotalSpentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSpentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,7 @@
 				64615DD42B0633D800EAAB0E /* ShoppingView.swift */,
 				64615DD82B06445D00EAAB0E /* TransportView.swift */,
 				64615DDA2B064A5600EAAB0E /* FoodView.swift */,
-				64615DD62B0636FA00EAAB0E /* SpendingsView.swift */,
+				64ADF36E2B0A162000E49EFE /* TotalSpentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 			children = (
 				64615DD22B0397DA00EAAB0E /* CardModel.swift */,
 				64615DF52B076FF800EAAB0E /* LoginResult.swift */,
+				64ADF36C2B0A12EC00E49EFE /* SpendingsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,15 +258,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				64615DF62B076FF800EAAB0E /* LoginResult.swift in Sources */,
+				64ADF36F2B0A162000E49EFE /* TotalSpentView.swift in Sources */,
 				64615DF82B0774E600EAAB0E /* FirestoreManager.swift in Sources */,
 				64615DB72B03900500EAAB0E /* ViewController.swift in Sources */,
 				64615DF42B076FB400EAAB0E /* AuthManager.swift in Sources */,
 				64615DB32B03900500EAAB0E /* AppDelegate.swift in Sources */,
+				64ADF36D2B0A12EC00E49EFE /* SpendingsModel.swift in Sources */,
 				64615DCA2B03910300EAAB0E /* CardView.swift in Sources */,
 				64615DFA2B077ED500EAAB0E /* TransitionManager.swift in Sources */,
 				64615DB52B03900500EAAB0E /* SceneDelegate.swift in Sources */,
 				64615DD92B06445D00EAAB0E /* TransportView.swift in Sources */,
-				64615DD72B0636FA00EAAB0E /* SpendingsView.swift in Sources */,
 				64615DDB2B064A5600EAAB0E /* FoodView.swift in Sources */,
 				64615DEF2B076DA200EAAB0E /* GoogleSingInViewController.swift in Sources */,
 				64615DD52B0633D800EAAB0E /* ShoppingView.swift in Sources */,

@@ -20,12 +20,6 @@ class CardView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    }
-    
-    convenience init(card: CardModel) {
-        self.init()
-        numbersLabel.text = card.numbers
-        nameLabel.text = card.ownerName
         self.transform = CGAffineTransformMakeRotation(90 * M_PI/180)
         setup()
     }
@@ -92,6 +86,14 @@ class CardView: UIView {
             make.bottom.equalToSuperview().offset(-30)
         }
         
+    }
+    
+    func changeCardOwner(name: String) {
+        nameLabel.text = name
+    }
+    
+    func changeCardNumber(number: String) {
+        numbersLabel.text = number
     }
     
 }

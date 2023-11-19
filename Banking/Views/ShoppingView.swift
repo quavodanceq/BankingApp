@@ -76,6 +76,10 @@ class ShoppingView: UIView {
             make.leading.equalTo(imageView.snp.trailing).offset(10)
         }
     }
+    
+    func changeAmount(sum: Int) {
+        amountLabel.text = "$\(sum).00"
+    }
 
     
 }

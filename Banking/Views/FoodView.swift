@@ -47,7 +47,7 @@ class FoodView: UIView {
         addSubview(nameLabel)
         nameLabel.textColor = .white
         nameLabel.font = UIFont(name: "Copperplate", size: 18)!
-        nameLabel.text = "Shopping"
+        nameLabel.text = "Food"
     }
 
     
@@ -75,6 +75,10 @@ class FoodView: UIView {
             make.centerY.equalToSuperview().offset(10)
             make.leading.equalTo(imageView.snp.trailing).offset(10)
         }
+    }
+    
+    func changeAmount(sum: Int) {
+        amountLabel.text = "$\(sum).00"
     }
 
     
